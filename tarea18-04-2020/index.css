@@ -1,0 +1,9 @@
+*{
+    margin: 0; box-sizing: border-box; color: white;
+}
+.contenedor{ width: 80%; margin: 0 auto; }
+header{background-color: indigo;height: 70px; }
+main{height: 830px;}
+aside, section{height: 100%; float: left;}
+aside{background-color: teal; width: 20%;}
+section{background-color: darkblue; width: 60%;}
