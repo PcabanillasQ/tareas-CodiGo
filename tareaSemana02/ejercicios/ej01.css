@@ -1,0 +1,18 @@
+*{margin: 0;box-sizing: border-box;}
+.contenedor{width: 80%; margin: 0 auto; height: 100vh;}
+nav, header, section, aside, footer{ padding: 10px;}
+
+nav{background-color: rgb(235, 243, 159); position: relative; height: 5%;} 
+nav a{ background-color: rgb(148, 1, 1); color: #fff; padding: 5px 14px; position: absolute;  top: 5px; right: 10px; text-decoration: none; text-transform: uppercase; font-weight: bold;}
+header{background-color: rgb(255, 190, 190); height: 20%;}
+
+main{ height: 50%;}
+.sidebar{width: 30%; float: left; background-color: rgb(184, 186, 255); height: 100%;}
+.content-principal{width: 70%; float: right; background-color: rgb(154, 248, 251); height: 100%;}
+
+.content-secundario{ height: 20%;  padding: 0;}
+.articulos{width: 35%; float: left; background-color: rgb(255, 188, 188); height: 100%;}
+.articulos:nth-child(even){background-color: rgb(183, 255, 207);}
+.articulos:first-child{width: 30%;}
+
+footer{ background-color: rgb(221, 196, 255); height: 5%;}
