@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.header, .header__principal, .header__navegacion-lista, .header__user{ display: flex; align-items: center; padding: 5px; }
+
+/* HEADER */
+.header{ background-color: #24292e; justify-content: space-between; height: 52px; }
+/* logo */
+.header__logo{ background-color: #fff; border-radius: 2px; height: 35px; width: 40px; margin-right: 10px; } 
+.header__logo i { font-size: 55px; color: #24292e; margin: -10px 0 0 -5px; }
+/* formulario */
+.header__form{ width: 260px; position: relative;}
+.header__form input{ width: 100%; padding: 5px; border-radius: 3px; border: none; background-color: #444;  }
+.header__form i{ position: absolute; color: #666; top: 4px; right: 8px;  }
+/* navegacion */
+.header__navegacion-lista{ list-style: none;  }
+.header__navegacion-item a{color: #ffffff; display: block; text-decoration: none; padding: 2px 8px; font-size: 13px; font-weight: 600; }
+.header__navegacion-item a:hover{color: #ccc;}
+
+
+
+/* HEADER USERS */
+
+.header__user-item { margin: 0 5px; }
+.header__user-item a{  color: #ffffff; display: block; text-decoration: none; padding: 2px 5px;}
+.header__user-item a:hover{  color: #ccc; }
+.header__user-item a i{  font-size: 14px; }
+.header__user-item  img { width: 16px; height: 16px; border-radius: 2px; vertical-align: middle; }
