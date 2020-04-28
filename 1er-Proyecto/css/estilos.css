@@ -8,7 +8,7 @@
 	--color-principal: #111;
 	--color-principal-90: #222;
 	--color-secundario: #eee;
-	--color-resaltado: #ff7315;
+	--color-resaltado: #e45e04;
 	--color-text: #666;
 
 	--ancho-der: 1000px;
@@ -36,7 +36,6 @@ body {
 	background-image: url(../img/fondo.jpg);
 	background-size: cover;
 	background-position: center;
-
 	
 }
 
@@ -141,6 +140,12 @@ header h1, header h2 {	display: none;}
 	margin-left: var(--margen-der);
 	margin-bottom: 100px;
 	max-width: var(--ancho-der);	
+}
+.habilidades:hover span{	
+	background-color: var(--color-resaltado);
+}
+.habilidades:hover h3, .sobre-mi:hover h3{	
+	color: var(--color-resaltado)!important;
 }
 
 .habilidades li span {
