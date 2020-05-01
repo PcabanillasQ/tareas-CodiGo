@@ -12,17 +12,15 @@ i=0;
 
 while(i<vector1.length){
     intercambio = vector1[i];
-    if(i == vector1.length-1){        
-        
+    if(i == vector1.length-1){      
         vector2[0]= intercambio;
     }else{
-
         vector2[i+1]= intercambio;
     }
-
     i++;
 }
 
 console.log(vector2);
+
 
 
