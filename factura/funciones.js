@@ -116,7 +116,9 @@ const mandarFactura = () =>{
         fecha: inpfecha.value,
         ruc: inpRuc.value,
         nroFact: inpNro.value,
-        articulos:detalleArticulos
+        articulos:detalleArticulos,
+        subTotalFact: inpSubtot.value,
+        totalFact: inpTot.value
     };
     facturas.push(factura);
     facturasString=JSON.stringify(facturas);
@@ -126,4 +128,6 @@ const mandarFactura = () =>{
     limpiarTotales();
     frmDatosGenerales.classList.remove("was-validated");
     localStorage.removeItem("detalle Articulos");
+    console.log(facturasString);
+    
 }
