@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <title>Materialize Cheat Sheet</title>
+      <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+
+    <body>
+      <nav class="nav-extended">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">MaterializeCSS</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a href="#tab-css">Css</a></li>
+              <li class="tab"><a class="#active" href="#tab-components">Components</a></li>
+              <li class="tab"><a href="#tab-javascript">Javascript</a></li>
+              <li class="tab"><a href="#tab-forms">Forms</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+      
+      <div class="container">
+
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="https://i.pinimg.com/originals/73/a1/d5/73a1d5a30d0a8a9da6a0f3f943fa7982.png" width="100%">
+            </div>
+            <a href="#user"><img class="circle white" src="https://vignette.wikia.nocookie.net/dragonballfanon/images/f/f0/Goku_Ni%C3%B1o_GT_Cola.png/revision/latest?cb=20130820210322&path-prefix=es"></a>
+            <a href="#name" ><span class="black white-text name p-1 mb-1">Pabel G. Cabanillas Quispe</span></a>
+            <a href="#email"><span class="black white-text email p-1">pabel17@gmail.com</span></a>
+          </div></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="#!">Second Link</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">Subheader</a></li>
+          <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger p-2 mt-6 teal white-text"><i class="material-icons">menu</i></a>
+
+        <div class="row">
+          <div class="col s12">
+            <h3 class="center-align" >Guia de Estilos e Implementación por PabelCQ</h3>
+          </div>
+        </div> 
+
+        <div id="tab-css" class="row">   
+
+          <ul id="badge-colores" class="hide-on-med-and-down">
+            <li><a href="#"><span class="new badge red" data-badge-caption="red"></span></a></li>
+            <li><a href="#"><span class="new badge pink" data-badge-caption="pink"></span></a></li>
+            <li><a href="#"><span class="new badge purple" data-badge-caption="purple"></span></a></li>
+            <li><a href="#"><span class="new badge deep-purple" data-badge-caption="deep-purple"></span></a></li>
+            <li><a href="#"><span class="new badge indigo" data-badge-caption="indigo"></span></a></li>
+            <li><a href="#"><span class="new badge blue" data-badge-caption="blue"></span></a></li>
+            <li><a href="#"><span class="new badge light-blue" data-badge-caption="light-blue"></span></a></li>
+            <li><a href="#"><span class="new badge cyan" data-badge-caption="cyan"></span></a></li>
+            <li><a href="#"><span class="new badge teal" data-badge-caption="teal"></span></a></li>
+            <li><a href="#"><span class="new badge green" data-badge-caption="green"></span></a></li>
+            <li><a href="#"><span class="new badge light-green" data-badge-caption="light-green"></span></a></li>
+            <li><a href="#"><span class="new badge lime" data-badge-caption="lime"></span></a></li>
+            <li><a href="#"><span class="new badge yellow" data-badge-caption="yellow"></span></a></li>
+            <li><a href="#"><span class="new badge amber" data-badge-caption="amber"></span></a></li>
+            <li><a href="#"><span class="new badge orange" data-badge-caption="orange"></span></a></li>
+            <li><a href="#"><span class="new badge deep-orange" data-badge-caption="deep-orange"></span></a></li>
+            <li><a href="#"><span class="new badge brown" data-badge-caption="brown"></span></a></li>
+            <li><a href="#"><span class="new badge grey" data-badge-caption="grey"></span></a></li>
+            <li><a href="#"><span class="new badge blue-grey" data-badge-caption="blue-grey"></span></a></li>     
+          </ul>
+
+          <h4 class="red-text mt-6">COLORES</h4>      
+          <ul id="badge-colores-tonos" class="hide-on-med-and-down">
+          </ul>    
+          <div id="muestra-colores" class="card-panel teal"> 
+            Para colorcar el color de <strong>FONDO</strong> has clic en las etiquetas de colores </div>          
+          <div id="texto-colores" class="card-panel teal-text"> Para colorcar el color de <strong>TEXTO</strong>  has clic en las etiquetas de colores </div>
+          <h6 class="helper-text"> Hacer clic en los colores de las etiquetas </h6>   
+          
+          <h4 class="red-text mt-6">BOTONES</h4>
+        <div id="listaBotones">
+          <button class="btn">Boton Standar</button>
+          <button class="btn waves-effect">Efecto WAVES</button>
+          <button class="btn waves-effect waves-light">WAVES claro</button>
+          <button class="btn btn-large">Boton Grande</button>
+          <button class="btn disabled">Boton Desabilitado</button>
+          <button class="btn pink darken-4">Boton PINK DARKEN 4</button>
+          <button class="btn blue-grey"><i class="material-icons left">cloud</i>Icono en boton</button>
+          <!-- FLOATING BUTTON -->
+          <a class="btn-floating deep-orange darken-4 btn-large"><i class="large material-icons">add</i>FLOATING BUTTON LARGE</a>
+          <!-- FLAT BUTTON -->
+          <a class="waves-effect waves-green btn-flat">Boton FLAT</a>
+          <!-- FIXED ACTION BUTTON -->
+          <div id="boton-fijo" class="fixed-action-btn">
+            <a class="btn-floating deep-orange darken-4 btn-large"><i class="large material-icons">mode_edit</i></a>
+            <ul>
+              <li>
+                <a href="#" class="btn-floating yellow btn-large"><i class="large material-icons">insert_chart</i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-floating cyan accent-4 btn-large"><i class="large material-icons">format_quote</i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-floating lime darken-4 btn-large"><i class="large material-icons">publish</i></a>
+              </li>
+              <li>
+                <a href="#" class="btn-floating orange lighten-4 btn-large"><i class="large material-icons">attach_file</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>        
+        <div id="codigo-botones" class="card-panel"> 
+          <h6 class="deep-purple-text"><strong> Para ver el codigo de los botonos, hacer clic en los botones </strong></h6> 
+        </div>
+
+        <div class="row">
+          <h4 class="red-text mt-6">CLASES DE AYUDA</h4>
+          <!-- ALINEAMIENTOS -->
+          <div class="left-align">
+            <h5>Alinear Texto a la izquierda</h5>
+          </div>
+          <div class="right-align">
+            <h5>Alinear texto a la Derechat</h5>
+          </div>
+          <div class="center-align">
+            <h5>Alinear texto al centro</h5>
+          </div>
+          <!-- FLOTAR A DERECHA E IZQUIERDA -->
+          <div class="left">Flotar a la izquierda</div>
+          <div class="right">Flotar a la derecha</div>
+          <!-- CLEAR -->
+          <div class="clearfix"></div>
+  
+          <!-- HIDE CONTENT -->
+          <div class="hide">Hidden for all devices</div>
+          <div class="hide-on-small-only">Hidden on mobile devices</div>
+          <div class="hide-on-med-only">Hidden for tablets</div>
+          <div class="hide-on-med-and-down">Hidden for tablets and smaller</div>
+          <div class="hide-on-med-and-up">Hidden for tablets and higher</div>
+          <div class="hide-on-large-only">Hidden for desktops</div>
+           <!-- TRUNCATE TEXT -->
+        <h5 class="truncate">
+          La clase "truncate" corta el texto cuando este llega al tamaño maximo de su contenedor, se añade "..." por ejemplo aqui aqui aqui
+        </h5>
+
+        </div>
+
+        <div class="row">
+          <h4 class="red-text mt-6">IMAGENES</h4>
+         
+          <div class="col s7">
+            <h5>responsive-img</h5>
+            <p>agregar la clase="responsive-img" al tag <strong> &#60img src="img/img.jpg" class="responsive-img"/> </strong> este agrega los estilos <strong>max-width: 100% </strong>y <strong>height:auto </strong> </p>
+            <!-- RESPONSIVE -->
+            <img src="images/coffee-beans.jpg" class="responsive-img">
+          </div>
+          <div class="col s5">
+            <div class="switch right">
+              <label>
+                Resposiva
+                <input id="cambiarImagenCircular" type="checkbox">
+                <span class="lever"></span>
+                Circular
+              </label>
+            </div>
+            <h5>circle</h5>
+            <p>agregar la clase="circle" al tag <strong> &#60img src="img/img.jpg" class="circle"/> </strong> este agrega los estilos <strong>border-radius: 50% </strong></p>
+            <!-- CIRCULAR -->
+            <img id="imagenCircular" src="images/coffee-beans.jpg" class="responsive-img circle">
+          </div>
+        </div>
+
+      
+
+       
+       
+
+        <h4 class="red-text mt-6">EFFECTS</h4>
+        <!-- HOVERABLE -->
+        <div class="row">
+          <div class="col s6">
+            <div class="red white-text hoverable p-3 mb-3">Contenido con Efecto Hover</div>
+          </div>
+          <div class="col s6 grey lighten-4">
+            <span class="teal-text mr-4">Contenido con Efecto de pulso</span>
+            <a class="btn-floating btn-large pulse  "><i class="material-icons">cloud</i></a>
+          </div>
+        </div>
+
+        <!-- PULSE -->
+
+        <!-- SHADOWS -->
+        <h4 class="red-text mt-6">TAMAÑOS DE SOMBRAS</h4>
+        <div class="row  center-align">
+          <div class="col s2">
+            <p class="z-depth-1 p-3 grey lighten-4">z-depth-1</p>
+          </div>
+          <div class="col s2">
+            <p class="z-depth-2 p-3 grey lighten-4">z-depth-2</p>
+          </div>
+          <div class="col s4">
+            <p class="z-depth-3 p-3 grey lighten-4">Agregar las clase "z-depth-3" y sus variaciones</p>
+          </div>
+          <div class="col s2">
+            <p class="z-depth-4 p-3 grey lighten-4">z-depth-4</p>
+          </div>
+          <div class="col s2">
+            <p class="z-depth-5 p-3 grey lighten-4">z-depth-5</p>
+          </div>
+        </div>
+
+        <!-- FLOW TEXT -->
+        <p class="flow-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h4 class="red-text mt-6 ">TABLAS</h4>
+        <div class="row mb-5">
+          <div class="col s6">
+            <h5>Striped Table</h5>
+            <p>agregar la clase="striped" al tag <strong> &#60table class="striped">Content...&#60/table> </strong> </p>
+            <table class="striped">
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <h5>Highlight Table</h5>
+            <p>agregar la clase="striped" al tag <strong> &#60table class="highlight">Content...&#60/table> </strong> </p>
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>Alvin</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                    <tr>
+                      <td>Alan</td>
+                      <td>Jellybean</td>
+                      <td>$3.76</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <h5>Centered Table</h5>
+            <p>agregar la clase="striped" al tag <strong> &#60table class="centered">Content...&#60/table> </strong> </p>
+            <table class="centered">
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <h5>Responsive Table</h5>
+            <p>agregar la clase="striped" al tag <strong> &#60table class="responsive-table">Content...&#60/table> </strong> </p>
+                <table class="responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>Alvin</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                    <tr>
+                      <td>Alan</td>
+                      <td>Jellybean</td>
+                      <td>$3.76</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+
+        </div> <!-- FIN TABS CSS-->
+
+
+        <div id="tab-components" class="row">
+          <h4 class="red-text ">NAVIGATION</h4>
+           <!-- LEFT LOGO -->
+          <nav>
+            <div class="nav-wrapper blue-grey lighten-3">
+              <a href="#" class="brand-logo">Logo</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+
+      <br><br>
+
+      <!-- RIGHT LOGO -->
+      <nav>
+        <div class="nav-wrapper red lighten-3">
+          <a href="#" class="brand-logo right">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <!-- CENTER LOGO -->
+      <nav>
+        <div class="nav-wrapper teal lighten-4">
+          <a href="#" class="brand-logo center">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <!-- DROPDOWN -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper indigo darken-4">
+          <a href="#" class="brand-logo center">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="dropdown-button" data-activates="dropdown1">Dropdown
+              <i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <!-- ICONS IN NAV -->
+      <nav>
+        <div class="nav-wrapper #757575 grey darken-1">
+          <a href="#" class="brand-logo center">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#"><i class="material-icons right">search</i></a></li>
+            <li><a href="#"><i class="material-icons right">refresh</i></a></li>
+            <li><a class="waves-effect #424242 grey darken-3 btn">Button</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <!-- SEARCHBAR -->
+      <nav>
+        <form>
+          <div class="nav-wrapper">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <!-- MOBILE COLLAPSE -->
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-activates="mobile-demo" class="side-nav">
+            <i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">HOla</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+          
+        </div><!-- FIN TABS COMPONENTES-->
+
+        <div id="tab-javascript" class="col s12">Test 3</div>
+        <div id="tab-forms" class="col s12">Test 4</div>
+        
+      </div> <!-- FIN CONTAINER -->
+      
+      <div class="container">     
+
+       
+
+
+        
+
+
+       
+      </div> <!-- end container class -->
+     
+
+      <div class="container">
+        <h3>COLLECTIONS / LIST</h3>
+
+        <!-- COLLECTION / LIST -->
+        <ul class="collection">
+          <li class="collection-item">Item 1</li>
+          <li class="collection-item">Item 2</li>
+          <li class="collection-item">Item 3</li>
+          <li class="collection-item">Item 4</li>
+        </ul>
+
+        <br><br>
+
+        <!-- LINKS COLLECTION -->
+        <ul class="collection">
+          <a href="#" class="collection-item">Link 1</a>
+          <a href="#" class="collection-item">Link 2</a>
+          <a href="#" class="collection-item">Link 3</a>
+          <a href="#" class="collection-item">Link 4</a>
+        </ul>
+
+        <br><br>
+
+        <!-- WITH HEADER -->
+        <ul class="collection with-header">
+          <li class="collection-item"><h4>Header</h4></li>
+          <li class="collection-item">Item 1</li>
+          <li class="collection-item">Item 2</li>
+          <li class="collection-item">Item 3</li>
+        </ul>
+
+        <br><br>
+
+        <!-- ICON LIST -->
+        <h3>ICON COLLECTION</h3>
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <i class="material-icons circle">folder</i>
+            <span class="title">Title</span>
+            <p>First Line <br/>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <i class="material-icons circle green">insert_chart</i>
+            <span class="title">Title</span>
+            <p>First Line <br/>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <i class="material-icons circle red">play_arrow</i>
+            <span class="title">Title</span>
+            <p>First Line <br/>
+                Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+        </ul>
+
+        <br><br>
+
+
+        <h3>PAGINATION</h3>
+        <ul class="pagination">
+          <li class="disabled"><a href=""><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li class="waves-effect"><a href="#">2</a></li>
+          <li class="waves-effect"><a href="#">3</a></li>
+          <li class="waves-effect"><a href="#">4</a></li>
+          <li class="waves-effect"><a href="#">5</a></li>
+          <li class="waves-effect"><a href="#">6</a></li>
+          <li class="waves-effect"><a href=""><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+
+        <br><br>
+
+        <h3>BREADCRUMBS</h3>
+        <!-- Directory structure of pages -->
+        <nav>
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="#" class="breadcrumb">First</a>
+              <a href="#" class="breadcrumb">Second</a>
+              <a href="#" class="breadcrumb">Third</a>
+            </div>
+          </div>
+        </nav>
+
+        <br><br>
+
+        <h3>CARDS</h3>
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red">
+              <i class="material-icons">add</i>
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+          </div>
+        </div>
+
+        <br><br>
+
+        <h3>IMAGE CARD</h3>
+        <div class="card small">
+          <div class="card-image">
+            <img src="images/coffee-beans.jpg">
+            <span class="card-title deep-orange-text">Coffee Beans</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+
+        <br><br>
+
+        <h2 class="header">Horizontal Card</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="images/coffee-beans.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <h3>CARD PANEL</h3>
+        <div class="card-panel teal">
+          <span class="white-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </div>
+
+        <br><br>
+
+        <h3>CHIPS</h3>
+        <div class="chip">
+          Tag 1<i class="close material-icons">close</i>
+        </div>
+        <div class="chip">
+          Tag 2<i class="close material-icons">close</i>
+        </div>
+
+        <br><br>
+
+        <h3>FORMS</h3>
+        <form>
+          <div class="input-field">
+            <input type="text" id="name">
+            <label class="active" for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" class="validate">
+            <label class="active" for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <textarea id="textarea" class="materialize-textarea"></textarea>
+            <label class="active" for="textarea">Textarea</label>
+          </div>
+        </form>
+
+        <br><br>
+
+        <h3>PRELOADERS</h3>
+        <div class="progress">
+          <div class="determinate" style="width:70%"></div>
+        </div>
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+
+        <!-- CIRCULAR PRELOADER -->
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <h3>GRID SYSTEM</h3>
+        <div class="row">
+          <div class="col s1"><div class="card-panel grey">1</div></div>
+          <div class="col s1"><div class="card-panel grey">2</div></div>
+          <div class="col s1"><div class="card-panel grey">3</div></div>
+          <div class="col s1"><div class="card-panel grey">4</div></div>
+          <div class="col s1"><div class="card-panel grey">5</div></div>
+          <div class="col s1"><div class="card-panel grey">6</div></div>
+          <div class="col s1"><div class="card-panel grey">7</div></div>
+          <div class="col s1"><div class="card-panel grey">8</div></div>
+          <div class="col s1"><div class="card-panel grey">9</div></div>
+          <div class="col s1"><div class="card-panel grey">10</div></div>
+          <div class="col s1"><div class="card-panel grey">11</div></div>
+          <div class="col s1"><div class="card-panel grey">12</div></div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <div class="col s8"><div class="card-panel blue-grey">8</div></div>
+          <div class="col s4"><div class="card-panel blue-grey">4</div></div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <div class="col s4"><div class="card-panel lime">4</div></div>
+          <div class="col s4"><div class="card-panel lime">4</div></div>
+          <div class="col s4"><div class="card-panel lime">4</div></div>
+        </div>
+
+        <br><br>
+
+        <!-- OFFSET -->
+        <div class="row">
+          <div class="col s12"><div class="card-panel cyan">This div is 12 columns</div></div>
+          <div class="col s6 offset-s6"><div class="card-panel cyan">This div is 6 columns offset by 6</div></div>
+        </div>
+
+        <br><br>
+
+        <!-- PUSH AND PULL -->
+        <div class="row">
+          <div class="col s7 push-s5"><div class="card-panel light-green">This div is 7 columns wide</div></div>
+          <div class="col s5 pull-s7"><div class="card-panel light-green">This div is 5 columns wide</div></div>
+        </div>
+
+
+      </div> <!-- end container class -->
+
+
+
+
+
+      <div style="height:500px"></div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="./js/materialize.js"></script>
+
+    </body>
+  </html>

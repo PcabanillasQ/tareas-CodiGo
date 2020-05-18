@@ -1,0 +1,58 @@
+$propiedades:(
+    m:margin,
+    p:padding
+);
+$direcciones: (
+    l: left,
+    r: right,
+    t: top,
+    b: bottom,
+    x: x,
+    y: y
+);
+
+$espacios:(
+    1: .4rem,
+    2: .7rem,
+    3: 1rem,
+    4: 1.5rem,
+    5: 2rem,
+    6: 3rem
+);
+
+@each $propiedad, $nombre in $propiedades{
+    @each $valor, $direccion in $direcciones {
+        @each $numero, $medida in $espacios{            
+            @if $valor == x {
+                .#{$propiedad}#{$valor}-#{$numero}{
+                    #{$nombre}-left: #{$medida}!important;
+                    #{$nombre}-right: #{$medida}!important;
+                }
+            } @else if $valor == y{
+                .#{$propiedad}#{$valor}-#{$numero}{
+                    #{$nombre}-top: #{$medida}!important;
+                    #{$nombre}-bottom: #{$medida}!important;
+                }
+            } @else{
+                .#{$propiedad}#{$valor}-#{$numero}{
+                    #{$nombre}-#{$direccion}: #{$medida} !important;
+                }
+            }  
+        }        
+    }
+}
+
+@each $propiedad, $nombre in $propiedades{
+    @each $numero, $medida in $espacios{
+        .#{$propiedad}-#{$numero} {
+            #{$nombre}: #{$medida} !important;
+        }
+    }
+}
+
+.m-0{
+    margin: 0 !important;
+}
+.p-0{
+    padding: 0 !important;
+}

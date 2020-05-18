@@ -1,0 +1,12 @@
+@import "./helpers";
+
+#badge-colores span.badge, #badge-colores-tonos span.badge{
+    margin-left: 0.2rem;
+}
+#badge-colores-tonos span.badge{
+    padding: .05rem 1rem;
+    font-weight: bold;
+}
+#muestra-colores{
+    padding-top: 2.5rem;
+}
