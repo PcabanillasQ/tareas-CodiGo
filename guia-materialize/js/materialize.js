@@ -1,4 +1,7 @@
 M.AutoInit();
+// $(".dropdown-trigger").dropdown();
+// $( document ).ready(()=>{
+// });
 
 const mostrarTextoColores = (elemento) => {
   let color = elemento.getAttribute('data-badge-caption');
