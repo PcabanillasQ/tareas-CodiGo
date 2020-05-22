@@ -22,14 +22,22 @@
   width: 10%;
   font-size: 1.3rem;
   line-height: 2.5;
-  padding-left: .9rem;
   right: 0%;
-  border-radius: .25rem;
+  border-radius: 0 .25rem .25rem 0;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .busqueda-clima__icono:hover {
