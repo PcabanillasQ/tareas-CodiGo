@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/01-weatherapp.css">
+</head>
+<body class="bg-dark">
+
+    <main class="container-fluid">
+        <div class="row mt-5 text-light">
+            <div class="col">
+                <h1 class="display-4 text-center">Búsqueda de Climas</h1>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-xl-6 col-md-8 col-sm-10">
+                <form id="busquedaForm" action="busqueda-clima" autocomplete="off">
+                    <div class="busqueda-clima__caja">                        
+                        <input id="busqueda__input" type="text" name="" class="form-control busqueda-clima__input" placeholder="Buscar el clima de una ciudad" aria-describedby="helpId">
+                        <i class="fas fa-search busqueda-clima__icono"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-8 col-sm-12">
+                <div id="cargando" class="alert alert-info text-center" role="alert" hidden>
+                    <h4 class="alert-heading">Buscando Climas...</h4>
+                    <p><i class="fas fa-spinner fa-5x fa-spin"></i></p>
+                </div>
+                <div id="clima" class="clima" hidden>
+                    <div class="clima__foto text-center">  
+                        <img id="icon" src="http://openweathermap.org/img/wn/10d@4x.png" alt="" srcset="">
+                    </div>
+                    <div class="clima__datos bg-light">
+                        <div class="clima__pais">
+                            <div class="clima__grados">
+                                <p id="temp" class="display-2">
+                                    25&#8451
+                                </p>
+                            </div>
+                            <div class="clima__ciudad">
+                                <p id="main">Nublado</p>
+                                <p> <span id="country"> <strong> Perú</strong></span>, <span id="name"> Puerto MAldonado</span></p>
+                            </div>
+                        </div>
+                        <div class="clima__fecha">
+                            <p id="fecha">21/05</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+    
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.13.1/dist/sweetalert2.all.min.js"></script>
+    
+
+    <script src="./01-weatherapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+$color-dark: #343a40;
+$color-rojo: rgb(177, 59, 79);
+$color-turquesa: #00bdaa;
+
+.busqueda-clima{
+    &__caja{
+        display: flex;
+        position: relative;
+    }
+    &__input{
+        background-color: lighten($color-dark, 50%);
+        width: 100%;
+        font-size: 1.5rem;
+        border: transparent;
+        transition: background-color 1s;
+        overflow: hidden;
+    }
+    &__icono{
+        color: lighten($color-dark, 20%);
+        position: absolute;
+        height: 100%;
+        width: 10%;
+        font-size: 1.3rem;
+        line-height: 2.5;
+        padding-left: .9rem;
+        right: 0%;
+        border-radius: .25rem;
+        transition: background-color 1s;
+        top: 50%;
+        transform: translateY(-50%);
+        &:hover{
+            background-color: lighten($color-dark, 20%);
+            color: lighten($color-dark, 80%);
+        }
+    }
+}
+
+
+.clima{
+    background-color: #A64253;
+    height: 350px;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    &__foto{      
+        height: 60%;       
+    }
+    &__datos{
+        height: 40%;
+        display: flex;        
+    }
+    &__pais{
+        flex: 7;
+        display: flex;
+        background-color:darken($color-dark,15%);
+        color: #eeeeee;
+    }
+    &__grados{
+        width: 60%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    &__ciudad{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #ccc;
+
+    }
+    &__ciudad, &__fecha{
+        p{margin-bottom: 0;}
+    }
+    &__fecha{
+        flex: 3;
+        background-color: $color-turquesa;
+        color:lighten($color-turquesa,40%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+}
+
+.swal2-timer-progress-bar{
+    background-color: $color-rojo!important;
+}

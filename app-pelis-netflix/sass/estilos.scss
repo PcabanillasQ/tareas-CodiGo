@@ -1,0 +1,44 @@
+@import "./portada";
+
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+#menu-principal{
+    height: var(--height-menu);
+}
+
+.btn-opacity{
+    background-color: #f8f9fa44;
+    border-color: #f8f9fa44;
+    color: #fff;
+}
+
+
+#inp-buscar{
+    // border: 1px solid yellow;
+    margin-right: 10px;
+    position: relative;
+    input{ transition: width .5s; width: 0px; padding: 0;  border: none; }
+    i{ position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #fff;
+
+    }
+}
+
+.carousel-cell {
+ width: 33.3%;
+ /* height: 200px; */
+}
+
+/* div */
+.imagen-pelicula {
+ height: 350px;
+ background-image: url("");
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ 
+}

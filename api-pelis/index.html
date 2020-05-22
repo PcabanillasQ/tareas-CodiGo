@@ -11,28 +11,19 @@
     <style>
         .carousel-cell{         
             min-height: 500px;
+            border: 1px solid #000;
+            width: 30%;
         } 
      
-        .flickity-page-dots{
-           bottom: 10px!important;
-        }
-        .card-title{
-          height: 55px;
-        }
+        .flickity-page-dots{ bottom: 10px!important;  }
+        .card-title{ height: 55px;  }
         .card-text {
-          height: 122px;
+          min-height: 122px!important;
           overflow: hidden;
           text-overflow: ellipsis;        
         }
-        .flickity-page-dots .dot{
-          background-color: #dc3545;
-        }
-        .titulos{
-          border: 1px solid #000;
-          position: relative;
-         
-          box-shadow: inset 0px -5px  rgba(0,0,0,0.65);
-        }
+        .flickity-page-dots .dot{ background-color: #dc3545;  }
+        .titulos{  position: relative;  }
 
         .titulos::after, .titulos::before{
           content: "";
@@ -40,21 +31,36 @@
           display: block;
           top: 50%;
           transform: translateY(-50%);
-          width: 40%;
+          width: 25%;
           height: 5px;  
         }
         .titulos::after{
-          background: linear-gradient(-90deg, #dc3545 , #dc354600 40% );
+          background: linear-gradient(-90deg, #dc3545 , #dc354600 90% );
         }
         .titulos::before{
           right: 0;
-          background: linear-gradient(90deg, #dc3545 , #dc354600 40% );
+          background: linear-gradient(90deg, #dc3545 , #dc354600 90% );
         }
         .img-pelis{
+          overflow: hidden;
           width: 100%;
-          height: 160px;
-          border: 1px solid #000;
+          height: 400px;
+          transition: background-color 3s;
         }
+
+       @media all and(max-width:768px){
+         .carousel-cell{
+           width: calc(50%-10px);
+           margin-right:10px ;
+         }
+       }
+       @media screen and (max-width: 576px){
+        .carousel-cell{
+           width: calc(100%);
+           margin-right:0px ;
+         }
+       }
+        
     </style>
 </head>
 <body class="bg-light">
@@ -92,7 +98,7 @@
         </div>
       </nav>
      <main class="container-fluid">
-         <div class="row mt-4">
+         <div class="row mt-4">|
              <div class="col">                 
                 <h2 class="titulos display-4 text-center">Mis Peliculas</h2>                   
              </div>
@@ -101,7 +107,7 @@
              <div class="col-10 ">
                 <div class="card shadow">
                     <div class="card-body">
-                        <div id="container-pelis" class="main-carousel">
+                        <div id="container-pelis" class="main-carousel" hidden>
                             <!-- <div class="carousel-cell ml-1">
                                 <div class="card" style="width: 18rem;">
                                     <img src="https://i.ytimg.com/vi/IyIVCtL8osA/maxresdefault.jpg" class="card-img-top" alt="...">
@@ -114,6 +120,10 @@
                             </div> -->
                            
                                                      
+                          </div>
+                          <div class="alert alert-info text-center" role="alert" id="alertCargando" >
+                            <h4 class="alert-heading">Cargando Peliculas</h4>
+                            <div class="spinner-border text-dark" role="status"></div>
                           </div>
                     </div>
                 </div>
