@@ -1,0 +1,116 @@
+:root {
+  --color-rojo-hover: #bd2130;
+  --color-verde-hover: #1e7e34;
+}
+
+.navbar {
+  height: 60px;
+}
+
+.navbar-collapse {
+  z-index: 10;
+}
+
+.navbar .nav-item {
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.navbar .nav-item .nav-link {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 1.1rem 2rem;
+}
+
+.navbar .nav-item:hover, .navbar .nav-item.active {
+  background-color: var(--color-rojo-hover);
+}
+
+.navbar .nav-item:hover .nav-link, .navbar .nav-item.active .nav-link {
+  padding: 1.1rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-pedidos {
+  height: 100%;
+}
+
+#tblListaProductos td .img-producto {
+  width: 60px;
+}
+
+#tblListaProductos td .img-producto img {
+  width: 100%;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+html.sr .listaPedidos__columna {
+  visibility: hidden;
+}
+
+.listaPedidos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -.5rem;
+  border-radius: 8px;
+}
+
+.listaPedidos__columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+.listaPedidos__item {
+  width: 90%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0.5rem;
+  background: white;
+  text-align: center;
+  border-radius: 4px;
+  height: 100%;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.card {
+  border: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.card-text {
+  font-size: .85rem;
+}
+
+.card-text p {
+  margin-bottom: 0;
+  margin-bottom: .5rem;
+}
+
+.card-text p span {
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: var(--green);
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem #23923d;
+          box-shadow: 0 0 0 0.2rem #23923d;
+}
+/*# sourceMappingURL=estilos.css.map */

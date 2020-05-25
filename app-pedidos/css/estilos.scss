@@ -1,0 +1,95 @@
+$color-rojo: #dc3545;
+$color-verde: #28a745;
+$color-verde-dark: darken($color-verde, 5%);
+:root {
+  --color-rojo-hover: #{darken($color-rojo, 10%)};
+  --color-verde-hover: #{darken($color-verde, 10%)};
+}
+
+.navbar {
+  height: 60px;
+  &-collapse {
+    z-index: 10;
+  }
+  .nav-item {
+    transition: background-color 0.4s;
+    .nav-link {
+      transition: all 0.4s;
+      padding: 1.1rem 2rem;
+    }
+    &:hover,
+    &.active {
+      background-color: var(--color-rojo-hover);
+      .nav-link {
+        padding: 1.1rem 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.form-pedidos{
+  height: 100%;
+}
+
+#tblListaProductos{
+  td .img-producto{
+    width: 60px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+html.sr {
+  .load-hidden{
+    visibility: hidden;
+  }
+  .listaPedidos__columna{
+    visibility: hidden;
+  }
+}
+
+.listaPedidos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -.5rem;
+  border-radius: 8px;
+}
+
+.listaPedidos__columna {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.listaPedidos__item {
+  width: 90%;
+  flex: auto;
+  margin: 0.5rem;
+  background: white;
+  text-align: center;
+  border-radius: 4px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.card{
+  border: transparent;
+  width: 100%;
+  height: 100%;
+  &-text {
+    font-size: .85rem;
+    p{
+    margin-bottom: 0;
+    margin-bottom: .5rem;
+    span{ font-weight: bold; }
+    }
+  }
+}
+
+.form-control:focus {
+  border-color: var(--green);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba($color-verde-dark, 15%);
+}
